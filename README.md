@@ -1,9 +1,11 @@
 # Aquashine CRM System
 
 ## 📋 Overview
+
 Aquashine CRM is a comprehensive Customer Relationship Management system designed for business operations management, including job cards, customer management, payments, and reporting.
 
 ### 🏢 Business Domains
+
 - **Service Management** - Service job cards and technician assignment
 - **Trading Operations** - Trading job cards and inventory
 - **Project Management** - Project-based job cards and tracking
@@ -15,24 +17,27 @@ Aquashine CRM is a comprehensive Customer Relationship Management system designe
 ## 🚀 Technology Stack
 
 ### Backend
+
 - **PHP** (Procedural) - Core business logic
 - **MySQL** - Database management
 - **TCPDF/FPDF** - PDF report generation
 
 ### Frontend
+
 - **HTML5/CSS3** - Structure and styling
 - **Bootstrap 5.3** - Responsive design framework
 - **jQuery 3.6** - DOM manipulation and AJAX
 - **JavaScript** - Client-side interactivity
 
 ### Server Requirements
+
 - PHP 7.4+ (with mysqli extension)
 - MySQL 5.7+
 - Apache/Nginx web server
 - SSL certificate (recommended)
 
-
 ## 📁 Project Structure
+
 aquashine-crm/
 ├── 📄 index.php # Main dashboard
 ├── 📄 login.php # User authentication
@@ -70,30 +75,31 @@ aquashine-crm/
 │
 ├── 📁 uploads/ # File uploads
 │
-├── 📄 *.php (300+ files) # Feature-specific pages
-└── 📄 *.js (38 files) # Feature-specific scripts
-
-
+├── 📄 _.php (300+ files) # Feature-specific pages
+└── 📄 _.js (38 files) # Feature-specific scripts
 
 ## 🔐 Authentication System
 
 ### Session Management
+
 - **Session Lifetime**: 1 hour (cookie) + 30 min (inactivity timeout)
 - **Security Features**: HTTP-only cookies, SameSite=Strict
 - **Auto-logout**: After 30 minutes of inactivity
 
 ### User Roles
-| Role | Access Level | Redirect URL |
-|------|--------------|--------------|
-| Admin | Full system access | `profile-admin.php` |
-| Manager | Management access | `profile-manager.php` |
-| Accounts | Financial access | `profile-accounts.php` |
+
+| Role     | Access Level       | Redirect URL           |
+| -------- | ------------------ | ---------------------- |
+| Admin    | Full system access | `profile-admin.php`    |
+| Manager  | Management access  | `profile-manager.php`  |
+| Accounts | Financial access   | `profile-accounts.php` |
 | Projects | Project management | `profile-projects.php` |
-| Sales | Sales operations | `profile-sales.php` |
+| Sales    | Sales operations   | `profile-sales.php`    |
 
 ## 💼 Core Business Features
 
 ### 1. **Job Card Management**
+
 - **Service Job Cards** - Customer service requests
 - **Trading Job Cards** - Sales and trading operations
 - **AMC Job Cards** - Annual maintenance contracts
@@ -101,24 +107,28 @@ aquashine-crm/
 - **Admin Job Cards** - Internal administrative tasks
 
 ### 2. **Customer Management**
+
 - Customer profiles and history
 - Contact information management
 - Customer project tracking
 - Service call logging
 
 ### 3. **Financial Operations**
+
 - Payment processing
 - M-Pesa integration
 - Collection reports (Service/Trading & Projects/Accounts)
 - Payment tracking and reconciliation
 
 ### 4. **Inventory Management**
+
 - Products and items tracking
 - Stock movement monitoring
 - Stock correction and adjustment
 - Procurement suggestions
 
 ### 5. **Reporting & Analytics**
+
 - **Daily Status Reports** (auto-generated 7-9 AM)
 - **Collection Reports** - S&T and P&A
 - **Technician Performance**
@@ -131,8 +141,9 @@ aquashine-crm/
 ### Local Development Setup
 
 1. **Clone Repository**
+
 ```bash
-git clone [repository-url]
+git clone https://github.com/lemayian23/aquashine_crm_simplified.git
 cd aquashine-crm
 
 
@@ -278,7 +289,7 @@ tbl_admin           -- User management
 tbl_customers       -- Customer information
 tbl_jobcard_*       -- Various job card types
 tbl_products        -- Product catalog
-tbl_items           -- Inventory items  
+tbl_items           -- Inventory items
 tbl_payments        -- Payment records
 tbl_technicians     -- Service technicians
 tbl_daily_status    -- Automated reports
@@ -334,3 +345,4 @@ Emergency: [On-call Developer]
 
 📝 License
 Proprietary - Aquashine Limited. All rights reserved.
+```
